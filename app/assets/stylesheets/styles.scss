@@ -1,0 +1,108 @@
+.navbar {
+    width: 100%;
+}
+
+.carouselImg {
+    width: 100%;
+}
+
+.jumbotron {
+    background-color: #1DCACE;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.loginJumbotron {
+    background-color: #1DCACE;
+    color: black;
+    margin-bottom: 10px;
+
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 15px 15px 15px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.p-footer {
+    text-align: center;
+}
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+}
+
+h2 {
+    text-align: left;
+    font-family: fantasy;
+}
+
+h2.pyc {
+    text-align: center;
+}
+
+h2.evnt {
+    text-align: center;
+}
+
+.card-comida {
+    height: 97%;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+.card-pyc {
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+svg.pe {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+
+/* Control de iconos de Politica y Condiciones */
+
+@media(min-width: 992px) {
+    svg.presupuesto {
+        width: 8em;
+        height: 8em;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    svg.presupuesto {
+        width: 5em;
+        height: 5em;
+    }
+}
+
+@media(max-width: 767px) {
+    svg.presupuesto {
+        width: 4em;
+        height: 4em;
+    }
+}
+
+#botonBorrar {
+    background-color: red;
+    position: absolute;
+    right: 0px;
+}
