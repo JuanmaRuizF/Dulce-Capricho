@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
-  get 'vistas_servidor/login'
-  get 'vistas_servidor/menu', to: 'vistas_servidor#menu'
-  root "vistas_clientes#index"
+  #Administración
+  get 'login/admin' => 'vistas_servidor#login'
+  get 'index/admin' => 'vistas_servidor#menu'
 
-  get "/vistas_clientes", to: "vistas_clientes#index"
+
+  root "vistas_clientes#index"
+  get 'index' => 'vistas_clientes#index'
 end
