@@ -3,6 +3,10 @@ class VistasServidorController < ApplicationController
   end
 
   def menu
+      @user = User.find_by(:id => session[:current_user_id])
+      if !@user 
+        redirect_to '/login/admin'
+      end
   end
 
   def admin
@@ -23,10 +27,4 @@ class VistasServidorController < ApplicationController
       redirect_to "/login/admin", notice: "Sesión Cerrada!"
   end
 
-  def index_admin
-      @user = User.find_by(:id => session[:current_user_id])
-      if !@user 
-        redirect_to '/login/admin'
-      end
-  end
 end
