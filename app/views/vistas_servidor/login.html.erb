@@ -44,7 +44,7 @@
             <hr>
         <% end %>
 
-        <form accept-charset="UTF-8" role="form" id="adminpedido" name="adminpedido" enctype="multipart/form-data">
+        <form method="POST" action="../login" accept-charset="UTF-8" role="form" id="adminpedido" name="adminpedido" enctype="multipart/form-data">
 
             <!-- Protección CSRF -->
             <%= token_tag nil %>
