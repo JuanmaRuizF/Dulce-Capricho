@@ -50,3 +50,31 @@ bizcocho2 = Bizcocho.create(nombre: "Chocolate")
 bizcocho3 = Bizcocho.create(nombre: "Zanahoria")
 bizcocho4 = Bizcocho.create(nombre: "Red Velvet")
 bizcocho5 = Bizcocho.create(nombre: "Galleta")
+
+#Eventos Seeder
+
+evento1 = Evento.create(nombre: "Boda", 
+    descripcion: "Asegúrate que uno de los mejores días de tu vida salga lo mejor posible con nuestra variedad de dulces y mesas.",
+    img1: "eventos/boda4.jpg",
+    img2: "eventos/boda2.jpg",
+    img3: "eventos/boda5.jpg")
+evento2 = Evento.create(nombre: "Bautizo", 
+    descripcion: "Un momento que sólo pasa una vez en la vida, con nuestra ayuda será un evento aún mejor.",
+    img1: "eventos/bautizo2.jpg",
+    img2: "eventos/bautizo3.jpg",
+    img3: "eventos/bautizo1.jpg")
+evento3 = Evento.create(nombre: "Comunión", 
+    descripcion: "Haz un poco más dulce este día tan especial",
+    img1: "eventos/comunion1.jpg",
+    img2: "eventos/comunion2.png",
+    img3: "eventos/comunion3.jpg")
+evento4 = Evento.create(nombre: "Cumpleaños", 
+    descripcion: "Cuando cumplas años o cualquier día, nosotros siempre te damos alegría.",
+    img1: "eventos/cumple5.jpg",
+    img2: "eventos/cumple2.jpg",
+    img3: "eventos/cumple1.jpg")
+evento5 = Evento.create(nombre: "Baby showers", 
+    descripcion: "Celebra y comparte la dulce espera rodeada de dulzuras. Un día que será difícil de olvidar.",
+    img1: "eventos/bs5.jpg",
+    img2: "eventos/bs6.jpg",
+    img3: "eventos/bs7.jpg")
