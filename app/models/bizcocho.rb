@@ -1,0 +1,2 @@
+class Bizcocho < ApplicationRecord
+end

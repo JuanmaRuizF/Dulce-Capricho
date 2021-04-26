@@ -1,0 +1,2 @@
+class Popcake < ApplicationRecord
+end

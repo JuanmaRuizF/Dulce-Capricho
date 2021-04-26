@@ -1,0 +1,2 @@
+class Buttercream < ApplicationRecord
+end

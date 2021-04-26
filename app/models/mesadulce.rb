@@ -1,0 +1,2 @@
+class Mesadulce < ApplicationRecord
+end
