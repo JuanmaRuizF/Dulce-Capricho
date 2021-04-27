@@ -22,6 +22,16 @@ Rails.application.routes.draw do
   post 'eventos/editar/:id', to: 'crud_eventos#editar' # Ruta que procesa la actualización de un registro en la base de datos 
   post 'eventos/eliminar/:id', to: 'crud_eventos#eliminar' # Ruta para eliminar un registro de la base de datos
   
+  #Vista servidor pedidos
+  get 'pedidos/index' => 'crud_pedidos#index'
+  get 'pedidos/leer/:id' => 'crud_pedidos#leer'
+  get 'pedidos/crear'=> 'crud_pedidos#crear'
+  get 'pedidos/actualizar/:id' => 'crud_pedidos#actualizar'
+  post 'pedidos/insertar' => 'crud_pedidos#insertar'
+  post 'pedidos/editar/:id', to: 'crud_pedidos#editar' 
+  post 'pedidos/eliminar/:id', to: 'crud_pedidos#eliminar' 
+
+
   #Clientes
   root "vistas_clientes#index"
   get 'index' => 'vistas_clientes#index'
