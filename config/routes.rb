@@ -26,5 +26,6 @@ Rails.application.routes.draw do
   root "vistas_clientes#index"
   get 'index' => 'vistas_clientes#index'
   get 'encargos' => 'vistas_clientes#encargos'
+  get 'pedidos' => 'vistas:clientes#pedidos'
 
 end
