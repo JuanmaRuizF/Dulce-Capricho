@@ -12,4 +12,17 @@ class VistasClientesController < ApplicationController
     @mesadulces = Mesadulce.all()
   end
 
+  def pedidos
+    @pedidos = Pedido.new(parametrosPedidos)
+    @pedidos.save
+
+    # Redireccionamos a la vista principal con mensaje  
+    flash[:notice] = "Pedido realizado correctamente"
+    #redirect_to "/pedidos"
+  end
+
+  private
+  def parametrosPedidos
+    params.permit(:nombre, :apellido, :email, :telefono, :domicilio, :CP, :fechaEntrega, :comentario, :tuPedido)
+  end
 end

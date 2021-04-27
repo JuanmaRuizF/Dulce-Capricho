@@ -78,3 +78,62 @@ evento5 = Evento.create(nombre: "Baby showers",
     img1: "eventos/bs5.jpg",
     img2: "eventos/bs6.jpg",
     img3: "eventos/bs7.jpg")
+
+
+#Seeder Pedidos    
+
+pedido1 = Pedido.create(nombre: "Francisco", 
+            apellido: "Rodríguez", 
+            email: "franrodri@gmail.com", 
+            telefono: "683203862",
+            domicilio: "c/León y Castillo 28", 
+            CP:"33000", 
+            fechaEntrega:"05/02/2021", 
+            comentario:"Me encantaría que llegase sobre el mediodía", 
+            tuPedido: "Galletas 
+            - Número: 50 
+            - Tamaño: Medianas 
+            - Sabor: Vainilla 
+            - Decorado: básico")
+
+
+pedido2 = Pedido.create(nombre: "Pepe", 
+            apellido: "Martínez", 
+            email: "pepemarti@gmail.com",
+            telefono: "693832391", 
+            domicilio: "c/San Juan 28", 
+            CP:"33020", 
+            fechaEntrega:"29/01/2021", 
+            comentario:"Nada más que añadir", 
+            tuPedido: "Cupcakes
+            - Número: 18
+            - Tamaño: Grandes
+            - Sabor: Red Velvet
+            - Buttercream: Nata
+           ")
+
+
+pedido3 = Pedido.create(nombre: "Irene", 
+            apellido: "García", 
+            email: "irenegarca5@gmail.com",
+            telefono: "630285237", 
+            domicilio: "c/ Triana", 
+            CP:"33100", 
+            fechaEntrega:"20/02/2021", 
+            comentario:"Trabajo de 8:00 a 14:00 así que no podré recoger el pedido antes", 
+            tuPedido: "Tartas
+            - Número de personas: 20
+            - Sabor del bizcocho: Chocolate
+            - Buttercream: Mango")
+
+pedido4 = Pedido.create(nombre: "Patricia", 
+            apellido: "Sánchez", 
+            email: "patrisan@gmail.com", 
+            domicilio: "c/ Lanzarote", 
+            CP:"33120", 
+            fechaEntrega:"20/03/2021", 
+            comentario:"", 
+            tuPedido: "Tartas
+            - Número de personas: 30
+            - Sabor del bizcocho: Galleta
+            - Buttercream: Nata")
