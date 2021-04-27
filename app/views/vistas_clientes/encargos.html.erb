@@ -106,6 +106,7 @@
                                 </div>
                             </div>
                         </li>
+
                         <%end%>
                     </ul>
 
@@ -174,9 +175,181 @@
         </div>
 
         <hr />
-        <!-- JUANMAAAAAAAAAAAAA AQUI EMPIEZAS TU-->
-    </div>
 
+        <div class="form-row">
+            <div class="col-md-12 col-lg-8">
+                <div class="form-group col-12">
+                    <h2>Galletas</h2>
+                </div>
+                <div class="d-block d-md-block d-lg-none">
+                    <%= image_tag "encargos/galletas-1200-600 (3).png", :class => "d-block w-100" %>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-row">
+                        <label for="galletas" class="col-lg-12 col-form-label">Cantidad</label>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <input type="number" class="form-control" min="15" placeholder="mín. 15" id="numeroGalletas" />
+                        </div>
+                        <label for="galletas" class="col-sm-6 col-md-3 col-form-label">galletas.</label>
+                    </div>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="galletas-tamaño">Elige el tamaño</label>
+                    <select id="galletas-tamaño" class="form-control">
+                        <option selected>Pequeñas</option>
+                        <option>Medianas</option>
+                        <option>Grandes</option>
+                        <option>Extra-grandes</option>
+                    </select>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label for="galletas-sabor">Elige el sabor</label>
+                    <select id="galletas-sabor" class="form-control">
+                        <% @galletas.each do |galletas| %>
+                            <option><%=galletas.nombre %></option>
+                        <%end%>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <label for="galletas-decorado">¿Qué decoración quieres para tus galletas?</label>
+                    <textarea id="galletas-decorado" class="form-control" placeholder="Indícanos el decorado que deben llevar tus galletas, ejemplo: primera comunión, azules, con letra J el mismo diseño para todas"></textarea>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck-galletas" />
+                        <label class="form-check-label" for="gridCheck-galletas">Quiero incluirlo en mi mesa</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="añadirGalletas()">Añadir</button>
+            </div>
+
+            <div class="d-none d-md-none d-lg-block col-lg-4">
+                <%= image_tag "encargos/galletas-1200-600 (1).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/galletas-1200-600 (2).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/galletas-1200-600 (3).png", :class => "d-block w-100" %>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="form-row">
+            <div class="d-none d-md-none d-lg-block col-lg-4">
+                <%= image_tag "encargos/cup-pop-cakes-1200-600 (3).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/cup-pop-cakes-1200-600 (4).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/cup-pop-cakes-1200-600 (6).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/cup-pop-cakes-1200-600 (1).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/cup-pop-cakes-1200-600 (2).png", :class => "d-block w-100" %>
+                <%= image_tag "encargos/cup-pop-cakes-1200-600 (5).png", :class => "d-block w-100" %>
+            </div>
+            <div class="col-md-12 col-lg-8">
+                <div class="form-group col-md-12">
+                    <h2>Cupcakes y Popcakes</h2>
+                </div>
+
+                <div class="col-12">
+                    <h3>Cupcakes</h3>
+                </div>
+                <div class="d-block d-md-block d-lg-none">
+                    <%= image_tag "encargos/cup-pop-cakes-1200-600 (3).png", :class => "d-block w-100" %>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-row">
+                        <label for="cupcakes" class="col-lg-12 col-form-label">Cantidad</label>
+                        <div class="col-md-4 col-lg-3">
+                            <input type="number" class="form-control" min="15" id="numeroCupcakes" placeholder="mín. 15" />
+
+                        </div>
+                        <label for="cupcakes" class="col-sm-6 col-md-3 form-label">cupcakes.</label>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12 col-lg-6">
+                    <label for="cupacakes-tamaño">Elige el tamaño</label>
+                    <select id="cupcakes-tamaño" class="form-control">
+                        <option selected>Pequeños</option>
+                        <option>Medianos</option>
+                        <option>Grandes</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-12 col-lg-6">
+                    <label for="cupcakes-sabor">Elige el sabor del bizcocho</label>
+                    <select id="cupcakes-sabor" class="form-control">
+                        <% @bizcochos.each do |bizcochos| %>
+                            <option><%= bizcochos.nombre %></option>
+                        <%end%>
+                    </select>
+                </div>
+                <div class="form-group col-md-12 col-lg-6">
+                    <label for="cupcakes-buttercream">Elige la buttercream</label>
+                    <select id="cupcakes-buttercream" class="form-control">
+                        <% @buttercreams.each do |buttercreams| %>
+                            <option><%=buttercreams.nombre %></option>
+                        <%end%>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck-cup-cakes" />
+                        <label class="form-check-label" for="gridCheck-cup-cakes">Quiero incluirlos en mi
+                            mesa</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="añadirCupcakes()">Añadir</button>
+
+                <hr />
+
+                <div class="col-12">
+                    <h3>Popcakes</h3>
+                </div>
+                <div class="d-block d-md-block d-lg-none">
+                    <%= image_tag "encargos/cup-pop-cakes-1200-600 (2).png", :class => "d-block w-100" %>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-row">
+                        <label for="popcakes" class="col-lg-12 col-form-label">Cantidad</label>
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <input type="number" class="form-control" min="15" placeholder="mín. 15" id="numeroPopcakes" />
+                        </div>
+                        <label for="popcakes" class="col-sm-6 col-md-3 col-form-label">popcakes.</label>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12 col-lg-6">
+                    <label for="popcakes-sabor">Elige el sabor</label>
+                    <select id="popcakes-sabor" class="form-control">
+                        <% @popcakes.each do |popcakes| %>
+                            <option><%=popcakes.nombre %></option>
+                        <%end%>
+                    </select>
+                </div>
+                <div class="form-group col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck-pop-cakes" />
+                        <label class="form-check-label" for="gridCheck-pop-cakes">Quiero incluirlos en mi
+                            mesa</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="añadirPopcakes()">Añadir</button>
+
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+            <div class=" form-group col-12">
+                <fieldset disabled>
+                    <h2>MI PEDIDO</h2>
+                    <textarea id="mipedido" class="form-control" rows="10"></textarea>
+                </fieldset>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" onclick="miPedido()">Enviar</button>
+                <button class="btn btn-primary" id="botonBorrar" right=0px onclick="limpiarPedido()">Borrar Pedido</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Genérico para todas las páginas -->
     <footer>
