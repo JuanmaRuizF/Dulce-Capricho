@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'crud_formularios/index' => 'crud_formularios#index'
+  get 'crud_formularios/crear' => 'crud_formularios#crear'
+  get 'crud_formularios/actualizar' => 'crud_formularios#actualizar'
+  get 'crud_formularios/leer' => 'crud_formularios#leer'
+  
   #Administración
   get 'login/admin' => 'vistas_servidor#login'
   get 'index/admin' => 'vistas_servidor#menu'
@@ -26,6 +31,6 @@ Rails.application.routes.draw do
   root "vistas_clientes#index"
   get 'index' => 'vistas_clientes#index'
   get 'encargos' => 'vistas_clientes#encargos'
-  get 'pedidos' => 'vistas_clientes#pedidos'
+  get 'contacto' => 'vistas_clientes#contacto'
 
 end
