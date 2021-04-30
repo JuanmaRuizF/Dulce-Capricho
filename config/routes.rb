@@ -44,5 +44,7 @@ Rails.application.routes.draw do
   get 'index' => 'vistas_clientes#index'
   get 'encargos' => 'vistas_clientes#encargos'
   get 'contacto' => 'vistas_clientes#contacto'
+  get 'pedidos' => 'vistas_clientes#pedidos'
+  post 'crearpedido' => 'vistas_clientes#crearpedido'
   post 'formularios' => 'vistas_clientes#formularios' 
 end

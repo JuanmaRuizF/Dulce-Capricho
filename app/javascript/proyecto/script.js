@@ -363,7 +363,7 @@ window.miPedido =function(){
         return;
     }
     localStorage.pedidoCompleto = pedidoCompleto;
-    document.location.href = "./contacto.html";
+    document.location.href = "./pedidos.html";
 }
 
 window.initContacto = function(){

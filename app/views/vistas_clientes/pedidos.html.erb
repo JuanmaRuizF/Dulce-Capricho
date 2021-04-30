@@ -24,7 +24,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="./encargos.html">Encargos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./encargos.html">Encargos</a></li>
                 <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
                 <li class="nav-item"><a class="nav-link" href="./politica_y_condiciones.html">Política y Condiciones</a></li>
                 <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
@@ -51,7 +51,7 @@
 
         <h1>Realiza un pedido</h1>
 
-        <form method="POST" action="/pedidos" accept-charset="UTF-8" role="form" id="crearpedido" name="crearpedido" enctype="multipart/form-data">
+        <form method="POST" action="/crearpedido" accept-charset="UTF-8" role="form" id="crearpedido" name="crearpedido" enctype="multipart/form-data">
             
             <!-- Protección CSRF -->
             <%= token_tag nil %>
