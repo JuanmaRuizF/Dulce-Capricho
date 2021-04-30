@@ -12,15 +12,13 @@ Rails.application.routes.draw do
   get 'login/admin' => 'vistas_servidor#login'
   get 'index/admin' => 'vistas_servidor#menu'
   post 'login' => 'vistas_servidor#admin'
+  get 'logout' => 'vistas_servidor#destroy'
 
   #Vista servidor productos
   get 'productos/index' => 'crud_productos#index'
-  get 'productos/leer/:id' => 'crud_productos#leer'
-  get 'productos/crear'=> 'crud_productos#crear'
-  get 'productos/actualizar/:id' => 'crud_productos#actualizar'
   post 'productos/insertar' => 'crud_productos#insertar'
-  post 'productos/editar/:id', to: 'crud_productos#editar' 
-  post 'productos/eliminar/:id', to: 'crud_productos#eliminar' 
+  post 'productos/editar/:id' => 'crud_productos#editar'
+  post 'productos/eliminar/:id' => 'crud_productos#eliminar'
 
   #Vista servidor eventos
   get 'eventos/index' => 'crud_eventos#index' # Ruta de la vista principal de los registros 
