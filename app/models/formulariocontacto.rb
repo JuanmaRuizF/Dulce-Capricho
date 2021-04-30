@@ -1,0 +1,2 @@
+class Formulariocontacto < ApplicationRecord
+end

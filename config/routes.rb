@@ -1,9 +1,13 @@
 Rails.application.routes.draw do
-  get 'crud_formularios/index' => 'crud_formularios#index'
-  get 'crud_formularios/crear' => 'crud_formularios#crear'
-  get 'crud_formularios/actualizar' => 'crud_formularios#actualizar'
-  get 'crud_formularios/leer' => 'crud_formularios#leer'
+  get 'formularios/index' => 'crud_formularios#index'
+  get 'formularios/crear' => 'crud_formularios#crear'
+  get 'formularios/actualizar/:id' => 'crud_formularios#actualizar'
+  get 'formularios/leer/:id' => 'crud_formularios#leer'
+  post 'formularios/insertar' => 'crud_formularios#insertar'
+  post 'formularios/editar/:id', to: 'crud_formularios#editar' 
+  post 'formularios/eliminar/:id', to: 'crud_formularios#eliminar' 
   
+
   #Administración
   get 'login/admin' => 'vistas_servidor#login'
   get 'index/admin' => 'vistas_servidor#menu'
@@ -42,5 +46,5 @@ Rails.application.routes.draw do
   get 'index' => 'vistas_clientes#index'
   get 'encargos' => 'vistas_clientes#encargos'
   get 'contacto' => 'vistas_clientes#contacto'
-
+  post 'formularios' => 'vistas_clientes#formularios' 
 end
