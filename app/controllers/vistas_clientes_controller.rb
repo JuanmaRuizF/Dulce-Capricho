@@ -21,6 +21,15 @@ class VistasClientesController < ApplicationController
     #redirect_to "/pedidos"
   end
 
+  def formularios
+    @formularios = Formulariocontacto.new(parametrosPedidos)
+    @formularios.save
+
+    # Redireccionamos a la vista principal con mensaje  
+    flash[:notice] = "Formulario enviado"
+    redirect_to "/contacto"
+  end
+
   private
   def parametrosPedidos
     params.permit(:nombre, :apellido, :email, :telefono, :domicilio, :CP, :fechaEntrega, :comentario, :tuPedido)

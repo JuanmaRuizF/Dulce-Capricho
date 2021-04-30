@@ -137,3 +137,17 @@ pedido4 = Pedido.create(nombre: "Patricia",
             - Número de personas: 30
             - Sabor del bizcocho: Galleta
             - Buttercream: Nata")
+
+formulariocontacto1 = Formulariocontacto.create(nombre: "Alberto",
+                        apellido: "Rodríguez",
+                        email: "albertorodriguez@gmail.com",
+                        telefono: "999888777",
+                        comentario: "¿Hacen reparto a domicilio?"
+                        )
+
+formulariocontacto2 = Formulariocontacto.create(nombre: "Jose",
+                        apellido: "Fernández",
+                        email: "josefernandez@gmail.com",
+                        telefono: "777888999",
+                        comentario: "Quiero hacer una fiesta de empreasa en las próximas navidades, ¿aceptan este tipo de eventos?"
+                        )
