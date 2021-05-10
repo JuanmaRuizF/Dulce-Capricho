@@ -47,4 +47,5 @@ Rails.application.routes.draw do
   get 'pedidos' => 'vistas_clientes#pedidos'
   post 'crearpedido' => 'vistas_clientes#crearpedido'
   post 'formularios' => 'vistas_clientes#formularios' 
+  get 'politica_y_condiciones' => 'vistas_clientes#politica_y_condiciones'
 end
