@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_04_27_181858) do
 
   create_table "eventos", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
-    t.string "descripcion"
+    t.text "descripcion"
     t.string "img1"
     t.string "img2"
     t.string "img3"
@@ -38,8 +38,8 @@ ActiveRecord::Schema.define(version: 2021_04_27_181858) do
     t.string "nombre"
     t.string "apellido"
     t.string "email"
-    t.string "telefono"
-    t.string "comentario"
+    t.text "telefono"
+    t.text "comentario"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
