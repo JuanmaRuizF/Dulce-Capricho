@@ -161,3 +161,14 @@ preguntafrecuente3 = Preguntasfrecuente.create(
                     titulo: "¿Cómo pago?",
                     descripcion: "En el presupuesto que te damos tendrás un número de cuenta y otro de telefono. Tu decides a través de transferencia bancaria, bizum o efectivo."      
 )
+
+
+
+
+fotoalergeno1 = Alergeno.create(
+    screenSize: "Small"
+    imgSmall: "/politicaCondiciones/Alérgenos3.png"
+    imgMedium:"/politicaCondiciones/Alérgenos2.png"
+    imgLarge:"/politicaCondiciones/Alérgenos1.png"
+)
+
