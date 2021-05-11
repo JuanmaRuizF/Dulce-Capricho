@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+ 
+
   get 'formularios/index' => 'crud_formularios#index'
   get 'formularios/crear' => 'crud_formularios#crear'
   get 'formularios/actualizar/:id' => 'crud_formularios#actualizar'
@@ -7,6 +10,10 @@ Rails.application.routes.draw do
   post 'formularios/editar/:id', to: 'crud_formularios#editar' 
   post 'formularios/eliminar/:id', to: 'crud_formularios#eliminar' 
   
+ #Política y Condiciones - Menú y sub apartados
+ get 'crud_pagina_politica_condiciones/menu_pagina_politica_condiciones' => 'crud_pagina_politica_condiciones#menu_pagina_politica_condiciones'
+ get 'crud_pagina_politica_condiciones/crud_alergenos' => 'crud_pagina_politica_condiciones#crud_alergenos'
+ get 'crud_pagina_politica_condiciones/crud_politica_condiciones' => 'crud_pagina_politica_condiciones#crud_politica_condiciones'
 
   #Administración
   get 'login/admin' => 'vistas_servidor#login'
