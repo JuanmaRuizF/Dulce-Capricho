@@ -15,65 +15,53 @@
 </head>
 
 <body>
-    
-<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-<a class="navbar-brand" href="./index.html">Dulce Capricho</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aira-controls="navbarNavDropdown" aira-expanded="false" aira-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="./encargos.html">Encargos</a></li>
-        <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
-        <li class="nav-item"><a class="nav-link" href="./politica_y_condiciones.html">Política y Condiciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="./quienessomos.html">¿Quiénes somos?</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./galeria.html">Galería</a></li>
-        <li class="nav-item"><a class="nav-link" href="./navidad.html">Especial de Navidad</a></li>
-        <li class="nav-item"><a class="nav-link" href="./halloween.html">Especial de Halloween</a></li>
-    </ul>
-</div>
-</nav>
-
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Dulce Capricho</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aira-controls="navbarNavDropdown" aira-expanded="false" aira-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="./encargos.html">Encargos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./politica_y_condiciones.html">Política y Condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="./quienessomos.html">¿Quiénes somos?</a></li>
+                <li class="nav-item active"><a class="nav-link" href="./galeria.html">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="./navidad.html">Especial de Navidad</a></li>
+                <li class="nav-item"><a class="nav-link" href="./halloween.html">Especial de Halloween</a></li>
+            </ul>
+        </div>
+    </nav>
     <!-- Jumbotron clasico -->
     <!-- ocupa el largo de la pantalla-->
     <div class="jumbotron">
         <h1><a href="./index.html"> Dulce Capricho </a></h1>
     </div>
+    <div class="container">
+        <div class="card-columns">
+            <% imagenes = 1%>
+            <%while imagenes < 73%>
+                <div class="card">
+                <a href="#" data-toggle="modal" data-target="#id<%=imagenes%>">
+                    <%= image_tag "galeria/galeria ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => ""%>
+                </a>
+                </div>
 
-    <!-- Carousel de fotos-->
-    <div id="carouselControls" class="carouselImg carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselControls" data-slide-to="1"></li>
-            <li data-target="#carouselControls" data-slide-to="2"></li>
-            <li data-target="#carouselControls" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <%= image_tag "carousel/tartas-1200-600.png", :class => "d-block w-100", :alt => "Primer slide"%>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/bautizo2.jpg", :class => "d-block w-100", :alt => "Segundo slide"%>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/boda2.jpeg", :class => "d-block w-100", :alt => "Tercer slide"%>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/mesas-dulces-1200-600.png", :class => "d-block w-100", :alt => "Cuarto slide"%>   
-            </div>
+                <!-- Modal -->
+                <div class="modal fade" id="id<%=imagenes%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <%= image_tag "galeria/galeria ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
+                    </div>
+                </div>
+                <%imagenes = imagenes + 1%>
+                        
+            <% end %>
+           
         </div>
-        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
     </div>
-
+    
     <!-- Genérico para todas las páginas -->
     <footer>
         <div class="row">
@@ -98,6 +86,9 @@
                 <a href="./politica_y_condiciones.html">Política y Condiciones</a>
                 <a href="./contacto.html">Contacto</a>
                 <a href="./quienessomos.html">¿Quiénes somos?</a>
+                <a href="./galeria.html">Galería</a>
+                <a href="./navidad.html">Especial de Navidad</a>
+                <a href="./halloween.html">Especial de Halloween</a>
             </div>
         </div>
     </footer>
