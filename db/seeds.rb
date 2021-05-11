@@ -73,12 +73,6 @@ evento4 = Evento.create(nombre: "Cumpleaños",
     img1: "eventos/cumple5.jpg",
     img2: "eventos/cumple2.jpg",
     img3: "eventos/cumple1.jpg")
-evento5 = Evento.create(nombre: "Baby showers", 
-    descripcion: "Celebra y comparte la dulce espera rodeada de dulzuras. Un día que será difícil de olvidar.",
-    img1: "eventos/bs5.jpg",
-    img2: "eventos/bs6.jpg",
-    img3: "eventos/bs7.jpg")
-
 
 #Seeder Pedidos    
 
