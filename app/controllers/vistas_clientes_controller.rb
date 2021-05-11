@@ -4,12 +4,12 @@ class VistasClientesController < ApplicationController
 
   def encargos
     @eventos = Evento.all()
-    
     @bizcochos = Bizcocho.all()
     @buttercreams = Buttercream.all()
     @galletas = Galletum.all()
     @popcakes = Popcake.all()
     @mesadulces = Mesadulce.all()
+
   end
 
   def crearpedido
@@ -21,6 +21,11 @@ class VistasClientesController < ApplicationController
     redirect_to "/pedidos"
   end
 
+  def index
+    @preguntasfrecuentes = Preguntasfrecuente.all()
+
+  end
+  
   def formularios
     @formularios = Formulariocontacto.new(parametrosPedidos)
     @formularios.save
