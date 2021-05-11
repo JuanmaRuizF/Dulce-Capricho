@@ -38,6 +38,42 @@
         <h1><a href="./index.html"> Dulce Capricho </a></h1>
     </div>
 
+    <% @eventos.each do |evento| %>
+
+    <div class="text-center">   
+        <h2 class="text-center"> <%= evento.nombre %> </h2>
+        <p class="text-center text-justify col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8" ><%= evento.descripcion %></p>
+    </div>
+
+    <div id="carouselControls<%= evento.nombre %>" class="col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8 carouselImg carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselControls" data-slide-to="1"></li>
+                <li data-target="#carouselControls" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <%= image_tag evento.img1, :class => "d-block w-100", :title => evento.nombre, :alt => evento.nombre %>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag evento.img2, :class => "d-block w-100", :title => evento.nombre, :alt => evento.nombre %>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag evento.img3, :class => "d-block w-100", :title => evento.nombre, :alt => evento.nombre %>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselControls<%= evento.nombre %>" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls<%= evento.nombre %>" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    <% end %>
+
     <footer>
         <div class="row">
             <div class="col-md-4 d-flex flex-column text-center text-md-left">
