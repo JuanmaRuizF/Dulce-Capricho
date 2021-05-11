@@ -30,8 +30,14 @@ class VistasClientesController < ApplicationController
     redirect_to "/contacto"
   end
 
+  def eventos
+    @eventos = Evento.all()
+  end
+  
   private
   def parametrosPedidos
     params.permit(:nombre, :apellido, :email, :telefono, :domicilio, :CP, :fechaEntrega, :comentario, :tuPedido)
   end
+
+
 end

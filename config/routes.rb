@@ -51,4 +51,6 @@ Rails.application.routes.draw do
   get 'navidad' => 'vistas_clientes#navidad'
   get 'halloween' => 'vistas_clientes#halloween'
   get 'galeria' => 'vistas_clientes#galeria'
+  
+  get 'eventos' => 'vistas_clientes#eventos'
 end
