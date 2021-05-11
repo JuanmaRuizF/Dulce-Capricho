@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   
  
 
+ 
+
   get 'formularios/index' => 'crud_formularios#index'
   get 'formularios/crear' => 'crud_formularios#crear'
   get 'formularios/actualizar/:id' => 'crud_formularios#actualizar'
@@ -10,6 +12,16 @@ Rails.application.routes.draw do
   post 'formularios/editar/:id', to: 'crud_formularios#editar' 
   post 'formularios/eliminar/:id', to: 'crud_formularios#eliminar' 
   
+#Preguntas frecuentes
+get 'crud_preguntas_frecuentes/index' => 'crud_preguntas_frecuentes#index'
+get 'crud_preguntas_frecuentes/crear' => 'crud_preguntas_frecuentes#crear'
+get 'crud_preguntas_frecuentes/actualizar/:id' => 'crud_preguntas_frecuentes#actualizar'
+get 'crud_preguntas_frecuentes/leer/:id' => 'crud_preguntas_frecuentes#leer'
+post 'crud_preguntas_frecuentes/insertar', to: 'crud_preguntas_frecuentes#insertar'
+post 'crud_preguntas_frecuentes/actualizar/:id', to: 'crud_preguntas_frecuentes#actualizar'
+post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#eliminar'
+
+
  #Política y Condiciones - Menú y sub apartados
  get 'crud_pagina_politica_condiciones/menu_pagina_politica_condiciones' => 'crud_pagina_politica_condiciones#menu_pagina_politica_condiciones'
  get 'crud_pagina_politica_condiciones/crud_alergenos' => 'crud_pagina_politica_condiciones#crud_alergenos'
@@ -36,6 +48,9 @@ Rails.application.routes.draw do
   post 'eventos/editar/:id', to: 'crud_eventos#editar' # Ruta que procesa la actualización de un registro en la base de datos 
   post 'eventos/eliminar/:id', to: 'crud_eventos#eliminar' # Ruta para eliminar un registro de la base de datos
   
+
+
+
   #Vista servidor pedidos
   get 'pedidos/index' => 'crud_pedidos#index'
   get 'pedidos/leer/:id' => 'crud_pedidos#leer'
