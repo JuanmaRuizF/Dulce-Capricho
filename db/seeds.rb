@@ -166,9 +166,9 @@ preguntafrecuente3 = Preguntasfrecuente.create(
 
 
 fotoalergeno1 = Alergeno.create(
-    screenSize: "Small"
-    imgSmall: "/politicaCondiciones/Alérgenos3.png"
-    imgMedium:"/politicaCondiciones/Alérgenos2.png"
+    screenSize: "Small",
+    imgSmall: "/politicaCondiciones/Alérgenos3.png",
+    imgMedium:"/politicaCondiciones/Alérgenos2.png",
     imgLarge:"/politicaCondiciones/Alérgenos1.png"
 )
 

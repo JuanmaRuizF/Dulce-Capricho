@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_11_130543) do
+ActiveRecord::Schema.define(version: 2021_05_14_174234) do
+
+  create_table "alergenos", charset: "utf8", force: :cascade do |t|
+    t.string "screenSize"
+    t.string "imgSmall"
+    t.string "imgMedium"
+    t.string "imgLarge"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "bizcochos", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
@@ -30,6 +39,11 @@ ActiveRecord::Schema.define(version: 2021_05_11_130543) do
     t.string "img1"
     t.string "img2"
     t.string "img3"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "footers", charset: "utf8", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
