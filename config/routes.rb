@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
  
 
+  get 'crud_footers/index'
+  get 'crud_footers/crear'
+  get 'crud_footers/actualizar'
+  get 'crud_footers/leer'
   get 'formularios/index' => 'crud_formularios#index'
   get 'formularios/crear' => 'crud_formularios#crear'
   get 'formularios/actualizar/:id' => 'crud_formularios#actualizar'

@@ -172,3 +172,118 @@ fotoalergeno1 = Alergeno.create(
     imgLarge:"/politicaCondiciones/Alérgenos1.png"
 )
 
+
+footer1 = Footer.create(
+    nombreizda:"Facebook",
+    enlaceizda:"https://www.facebook.com",
+    nombremedio:"",
+    nombredcha:"",
+    enlacedcha:""
+)
+
+footer2 = Footer.create(
+    nombreizda:"Twitter",
+    enlaceizda:"https://www.twitter.com",
+    nombremedio:"",
+    nombredcha:"",
+    enlacedcha:""
+)
+
+footer3 = Footer.create(
+    nombreizda:"Instagram",
+    enlaceizda:"https://www.instagram.com",
+    nombremedio:"",
+    nombredcha:"",
+    enlacedcha:""
+)
+
+footer4 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"Dirección, Provincia, España",
+    nombredcha:"",
+    enlacedcha:""
+)
+
+footer5 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"+555 55 55 55",
+    nombredcha:"",
+    enlacedcha:""
+)
+
+footer6 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"dulceycaprichobyana@gmail.com",
+    nombredcha:"",
+    enlacedcha:""
+)
+
+footer7 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Inicio",
+    enlacedcha:"./index.html"
+)
+
+footer8 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Encargos",
+    enlacedcha:"./encargos.html"
+)
+
+footer9 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Eventos",
+    enlacedcha:"./eventos.html"
+)
+footer10 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Política y Condiciones",
+    enlacedcha:"./politica_y_condiciones.html"
+)
+footer11 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Contacto",
+    enlacedcha:"./contacto.html"
+)
+footer12 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"¿Quiénes somos?",
+    enlacedcha:"./quienessomos.html"
+)
+footer12 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Galería",
+    enlacedcha:"./galeria.html"
+)
+footer12 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Especial de Navidad",
+    enlacedcha:"./navidad.html"
+)
+footer12 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Especial de Halloween",
+    enlacedcha:"./halloween.html"
+)
+

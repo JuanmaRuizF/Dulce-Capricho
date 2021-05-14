@@ -44,6 +44,11 @@ ActiveRecord::Schema.define(version: 2021_05_14_174234) do
   end
 
   create_table "footers", charset: "utf8", force: :cascade do |t|
+    t.string "nombreizda"
+    t.string "enlaceizda"
+    t.string "nombremedio"
+    t.string "nombredcha"
+    t.string "enlacedcha"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
