@@ -176,114 +176,69 @@ fotoalergeno1 = Alergeno.create(
 footer1 = Footer.create(
     nombreizda:"Facebook",
     enlaceizda:"https://www.facebook.com",
-    nombremedio:"",
-    nombredcha:"",
-    enlacedcha:""
+    nombremedio:"Dirección, Provincia, España",
+    nombredcha:"Inicio",
+    enlacedcha: "./index.html"
 )
 
 footer2 = Footer.create(
     nombreizda:"Twitter",
     enlaceizda:"https://www.twitter.com",
-    nombremedio:"",
-    nombredcha:"",
-    enlacedcha:""
+    nombremedio:"+555 55 55 55",
+    nombredcha:"Encargos",
+    enlacedcha:"./encargos.html"
 )
 
 footer3 = Footer.create(
     nombreizda:"Instagram",
     enlaceizda:"https://www.instagram.com",
-    nombremedio:"",
-    nombredcha:"",
-    enlacedcha:""
-)
-
-footer4 = Footer.create(
-    nombreizda:"",
-    enlaceizda:"",
-    nombremedio:"Dirección, Provincia, España",
-    nombredcha:"",
-    enlacedcha:""
-)
-
-footer5 = Footer.create(
-    nombreizda:"",
-    enlaceizda:"",
-    nombremedio:"+555 55 55 55",
-    nombredcha:"",
-    enlacedcha:""
-)
-
-footer6 = Footer.create(
-    nombreizda:"",
-    enlaceizda:"",
     nombremedio:"dulceycaprichobyana@gmail.com",
-    nombredcha:"",
-    enlacedcha:""
-)
-
-footer7 = Footer.create(
-    nombreizda:"",
-    enlaceizda:"",
-    nombremedio:"",
-    nombredcha:"Inicio",
-    enlacedcha:"./index.html"
-)
-
-footer8 = Footer.create(
-    nombreizda:"",
-    enlaceizda:"",
-    nombremedio:"",
-    nombredcha:"Encargos",
-    enlacedcha:"./encargos.html"
-)
-
-footer9 = Footer.create(
-    nombreizda:"",
-    enlaceizda:"",
-    nombremedio:"",
     nombredcha:"Eventos",
     enlacedcha:"./eventos.html"
 )
-footer10 = Footer.create(
+
+footer3 = Footer.create(
     nombreizda:"",
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"Política y Condiciones",
     enlacedcha:"./politica_y_condiciones.html"
 )
-footer11 = Footer.create(
+footer4 = Footer.create(
     nombreizda:"",
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"Contacto",
     enlacedcha:"./contacto.html"
 )
-footer12 = Footer.create(
+footer5 = Footer.create(
     nombreizda:"",
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"¿Quiénes somos?",
     enlacedcha:"./quienessomos.html"
 )
-footer12 = Footer.create(
+footer6 = Footer.create(
     nombreizda:"",
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"Galería",
     enlacedcha:"./galeria.html"
 )
-footer12 = Footer.create(
+footer7 = Footer.create(
     nombreizda:"",
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"Especial de Navidad",
     enlacedcha:"./navidad.html"
 )
-footer12 = Footer.create(
+footer8 = Footer.create(
     nombreizda:"",
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"Especial de Halloween",
     enlacedcha:"./halloween.html"
 )
+
+
 
