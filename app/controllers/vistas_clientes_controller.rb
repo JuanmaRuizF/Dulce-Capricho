@@ -13,6 +13,7 @@ class VistasClientesController < ApplicationController
   end
 
   def crearpedido
+    @footers = Footer.all()
     @pedidos = Pedido.new(parametrosPedidos)
     @pedidos.save
 
@@ -23,10 +24,34 @@ class VistasClientesController < ApplicationController
 
   def index
     @preguntasfrecuentes = Preguntasfrecuente.all()
+    @footers = Footer.all()
 
   end
   
+
+  def halloween
+    @footers = Footer.all()
+  end
+
+  def navidad
+    @footers = Footer.all()
+  end
+
+  def galeria
+    @footers = Footer.all()
+  end
+
+  def contacto
+    
+      @footers = Footer.all()
+  end
+
+
+  def politica_y_condiciones
+    @footers = Footer.all()
+  end
   def formularios
+    @footers = Footer.all()
     @formularios = Formulariocontacto.new(parametrosPedidos)
     @formularios.save
 
@@ -35,7 +60,13 @@ class VistasClientesController < ApplicationController
     redirect_to "/contacto"
   end
 
+
+  def encargos
+    @footers = Footer.all()
+  end
+  
   def eventos
+    @footers = Footer.all()
     @eventos = Evento.all()
   end
   
