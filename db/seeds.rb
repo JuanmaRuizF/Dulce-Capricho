@@ -145,9 +145,39 @@ formulariocontacto2 = Formulariocontacto.create(nombre: "Jose",
                         telefono: "777888999",
                         comentario: "Quiero hacer una fiesta de empreasa en las próximas navidades, ¿aceptan este tipo de eventos?"
                         )
+<<<<<<< HEAD
 imagenes = 1
 while imagenes < 73
     galeria = Galerium.create(img: "galeria/galeria ("+ String(imagenes) + ").jpg")
     imagenes = imagenes + 1
 end
     
+=======
+
+
+preguntafrecuente1 = Preguntasfrecuente.create(
+                    titulo: "¿Cómo funciona?",
+                    descripcion: "Ofrecemos mesas de dulces, personalizalas y añade tartas, galletas, cupcakes y popcakes a tu gusto. Tambien puedes perdir tartas, galletas, cupcakes y popcakes por separado"      
+)
+
+preguntafrecuente2 = Preguntasfrecuente.create(
+                    titulo: "¿Cómo puedo realizar un pedido?",
+                    descripcion: "Ve al apartado de encargos y escoge los productos que desees, envía el formulario y te mandaremos un presupuesto con tu pedido a tu correo en las siguientes 24 horas ."      
+)
+
+preguntafrecuente3 = Preguntasfrecuente.create(
+                    titulo: "¿Cómo pago?",
+                    descripcion: "En el presupuesto que te damos tendrás un número de cuenta y otro de telefono. Tu decides a través de transferencia bancaria, bizum o efectivo."      
+)
+
+
+
+
+fotoalergeno1 = Alergeno.create(
+    screenSize: "Small",
+    imgSmall: "/politicaCondiciones/Alérgenos3.png",
+    imgMedium:"/politicaCondiciones/Alérgenos2.png",
+    imgLarge:"/politicaCondiciones/Alérgenos1.png"
+)
+
+>>>>>>> df30dbafa55bac1682ad754c6b4915d436ca3a84

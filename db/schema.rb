@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2021_05_16_122646) do
+=======
+ActiveRecord::Schema.define(version: 2021_05_14_174234) do
+
+  create_table "alergenos", charset: "utf8", force: :cascade do |t|
+    t.string "screenSize"
+    t.string "imgSmall"
+    t.string "imgMedium"
+    t.string "imgLarge"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+>>>>>>> df30dbafa55bac1682ad754c6b4915d436ca3a84
 
   create_table "bizcochos", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
@@ -34,18 +47,26 @@ ActiveRecord::Schema.define(version: 2021_05_16_122646) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "footers", charset: "utf8", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "formulariocontactos", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
     t.string "apellido"
     t.string "email"
     t.string "telefono"
     t.string "comentario"
+<<<<<<< HEAD
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "galeria", charset: "utf8", force: :cascade do |t|
     t.string "img"
+=======
+>>>>>>> df30dbafa55bac1682ad754c6b4915d436ca3a84
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -78,6 +99,13 @@ ActiveRecord::Schema.define(version: 2021_05_16_122646) do
 
   create_table "popcakes", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "preguntasfrecuentes", charset: "utf8", force: :cascade do |t|
+    t.string "titulo"
+    t.string "descripcion"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
