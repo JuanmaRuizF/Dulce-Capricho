@@ -178,3 +178,73 @@ fotoalergeno1 = Alergeno.create(
     imgLarge:"/politicaCondiciones/Alérgenos1.png"
 )
 
+
+footer1 = Footer.create(
+    nombreizda:"Facebook",
+    enlaceizda:"https://www.facebook.com",
+    nombremedio:"Dirección, Provincia, España",
+    nombredcha:"Inicio",
+    enlacedcha: "./index.html"
+)
+
+footer2 = Footer.create(
+    nombreizda:"Twitter",
+    enlaceizda:"https://www.twitter.com",
+    nombremedio:"+555 55 55 55",
+    nombredcha:"Encargos",
+    enlacedcha:"./encargos.html"
+)
+
+footer3 = Footer.create(
+    nombreizda:"Instagram",
+    enlaceizda:"https://www.instagram.com",
+    nombremedio:"dulceycaprichobyana@gmail.com",
+    nombredcha:"Eventos",
+    enlacedcha:"./eventos.html"
+)
+
+footer3 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Política y Condiciones",
+    enlacedcha:"./politica_y_condiciones.html"
+)
+footer4 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Contacto",
+    enlacedcha:"./contacto.html"
+)
+footer5 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"¿Quiénes somos?",
+    enlacedcha:"./quienessomos.html"
+)
+footer6 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Galería",
+    enlacedcha:"./galeria.html"
+)
+footer7 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Especial de Navidad",
+    enlacedcha:"./navidad.html"
+)
+footer8 = Footer.create(
+    nombreizda:"",
+    enlaceizda:"",
+    nombremedio:"",
+    nombredcha:"Especial de Halloween",
+    enlacedcha:"./halloween.html"
+)
+
+
+
