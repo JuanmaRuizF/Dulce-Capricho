@@ -33,6 +33,10 @@ class VistasClientesController < ApplicationController
   def eventos
     @eventos = Evento.all()
   end
+
+  def galeria
+    @galeria = Galerium.all()
+  end
   
   private
   def parametrosPedidos

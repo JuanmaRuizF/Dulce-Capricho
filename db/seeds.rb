@@ -145,3 +145,9 @@ formulariocontacto2 = Formulariocontacto.create(nombre: "Jose",
                         telefono: "777888999",
                         comentario: "Quiero hacer una fiesta de empreasa en las próximas navidades, ¿aceptan este tipo de eventos?"
                         )
+imagenes = 1
+while imagenes < 73
+    galeria = Galerium.create(img: "galeria/galeria ("+ String(imagenes) + ").jpg")
+    imagenes = imagenes + 1
+end
+    

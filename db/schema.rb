@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_04_27_181858) do
+ActiveRecord::Schema.define(version: 2021_05_16_122646) do
 
   create_table "bizcochos", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 2021_04_27_181858) do
 
   create_table "eventos", charset: "utf8", force: :cascade do |t|
     t.string "nombre"
-    t.text "descripcion"
+    t.string "descripcion"
     t.string "img1"
     t.string "img2"
     t.string "img3"
@@ -38,8 +38,14 @@ ActiveRecord::Schema.define(version: 2021_04_27_181858) do
     t.string "nombre"
     t.string "apellido"
     t.string "email"
-    t.text "telefono"
-    t.text "comentario"
+    t.string "telefono"
+    t.string "comentario"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "galeria", charset: "utf8", force: :cascade do |t|
+    t.string "img"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

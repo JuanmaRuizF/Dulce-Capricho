@@ -41,24 +41,19 @@
     </div>
     <div class="container">
         <div class="card-columns">
-            <% imagenes = 1%>
-            <%while imagenes < 73%>
+            <% @galeria.each do |img|%>
                 <div class="card">
-                <a href="#" data-toggle="modal" data-target="#id<%=imagenes%>">
-                    <%= image_tag "galeria/galeria ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => ""%>
+                <a href="#" data-toggle="modal" data-target="#id<%=img.id%>">
+                    <%= image_tag img.img , :class => "img-fluid rounded", :alt => ""%>
                 </a>
                 </div>
-
                 <!-- Modal -->
-                <div class="modal fade" id="id<%=imagenes%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal fade" id="id<%=img.id%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                        <%= image_tag "galeria/galeria ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
+                        <%= image_tag img.img , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
                     </div>
-                </div>
-                <%imagenes = imagenes + 1%>
-                        
+                </div>                        
             <% end %>
-           
         </div>
     </div>
     
