@@ -69,6 +69,10 @@ class VistasClientesController < ApplicationController
     @footers = Footer.all()
     @eventos = Evento.all()
   end
+
+  def galeria
+    @galeria = Galerium.all()
+  end
   
   private
   def parametrosPedidos
