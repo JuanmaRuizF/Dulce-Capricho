@@ -1,7 +1,5 @@
 class VistasClientesController < ApplicationController
-  def index
-  end
-
+  
   def encargos
     @eventos = Evento.all()
     @bizcochos = Bizcocho.all()
@@ -9,7 +7,12 @@ class VistasClientesController < ApplicationController
     @galletas = Galletum.all()
     @popcakes = Popcake.all()
     @mesadulces = Mesadulce.all()
+    @footers = Footer.all()     
+  end
 
+  def eventos
+    @footers = Footer.all()
+    @eventos = Evento.all()
   end
 
   def crearpedido
@@ -25,10 +28,8 @@ class VistasClientesController < ApplicationController
   def index
     @preguntasfrecuentes = Preguntasfrecuente.all()
     @footers = Footer.all()
-
   end
   
-
   def halloween
     @footers = Footer.all()
   end
@@ -39,17 +40,18 @@ class VistasClientesController < ApplicationController
 
   def galeria
     @footers = Footer.all()
+    @galeria = Galerium.all() 
   end
 
-  def contacto
-    
-      @footers = Footer.all()
+  def contacto   
+    @footers = Footer.all()
   end
 
 
   def politica_y_condiciones
     @footers = Footer.all()
   end
+
   def formularios
     @footers = Footer.all()
     @formularios = Formulariocontacto.new(parametrosPedidos)
@@ -60,24 +62,9 @@ class VistasClientesController < ApplicationController
     redirect_to "/contacto"
   end
 
-
-  def encargos
-    @footers = Footer.all()
-  end
-  
-  def eventos
-    @footers = Footer.all()
-    @eventos = Evento.all()
-  end
-
-  def galeria
-    @galeria = Galerium.all()
-  end
-  
   private
   def parametrosPedidos
     params.permit(:nombre, :apellido, :email, :telefono, :domicilio, :CP, :fechaEntrega, :comentario, :tuPedido)
   end
-
 
 end
