@@ -4,10 +4,6 @@ Rails.application.routes.draw do
 
  
 
-  get 'crud_footers/index'
-  get 'crud_footers/crear'
-  get 'crud_footers/actualizar'
-  get 'crud_footers/leer'
   get 'formularios/index' => 'crud_formularios#index'
   get 'formularios/crear' => 'crud_formularios#crear'
   get 'formularios/actualizar/:id' => 'crud_formularios#actualizar'
@@ -24,6 +20,8 @@ get 'crud_preguntas_frecuentes/leer/:id' => 'crud_preguntas_frecuentes#leer'
 post 'crud_preguntas_frecuentes/insertar', to: 'crud_preguntas_frecuentes#insertar'
 post 'crud_preguntas_frecuentes/actualizar/:id', to: 'crud_preguntas_frecuentes#actualizar'
 post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#eliminar'
+
+
 
 
  #Política y Condiciones - Menú y sub apartados
@@ -64,6 +62,15 @@ post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#el
   post 'pedidos/editar/:id', to: 'crud_pedidos#editar' 
   post 'pedidos/eliminar/:id', to: 'crud_pedidos#eliminar' 
 
+    #Footer
+  
+    get 'crud_footers/index' => 'crud_footers#index'
+    get 'crud_footers/crear' => 'crud_footers#crear'
+    get 'crud_footers/actualizar/:id' => 'crud_footers#actualizar'
+    get 'crud_footers/leer/:id' => 'crud_footers#leer'
+    post 'crud_footers/insertar' => 'crud_footers#insertar'
+    post 'crud_footers/editar/:id', to: 'crud_footers#editar'
+    post 'crud_footers/eliminar/:id', to: 'crud_footers#eliminar'
 
   #Clientes
   root "vistas_clientes#index"
@@ -77,6 +84,7 @@ post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#el
   get 'navidad' => 'vistas_clientes#navidad'
   get 'halloween' => 'vistas_clientes#halloween'
   get 'galeria' => 'vistas_clientes#galeria'
-  
   get 'eventos' => 'vistas_clientes#eventos'
+
+
 end

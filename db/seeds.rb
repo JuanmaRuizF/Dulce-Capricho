@@ -222,7 +222,7 @@ footer5 = Footer.create(
     enlaceizda:"",
     nombremedio:"",
     nombredcha:"¿Quiénes somos?",
-    enlacedcha:"./quienessomos.html"
+    enlacedcha:"./quienes_somos.html"
 )
 footer6 = Footer.create(
     nombreizda:"",
