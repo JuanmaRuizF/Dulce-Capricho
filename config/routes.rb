@@ -84,6 +84,7 @@ post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#el
   get 'navidad' => 'vistas_clientes#navidad'
   get 'halloween' => 'vistas_clientes#halloween'
   get 'galeria' => 'vistas_clientes#galeria'
+  get 'quienes_somos' => 'vistas_clientes#quienes_somos'
   get 'eventos' => 'vistas_clientes#eventos'
 
 
