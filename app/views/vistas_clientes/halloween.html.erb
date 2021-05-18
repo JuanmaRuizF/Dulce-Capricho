@@ -40,37 +40,81 @@
     <div class="jumbotron">
         <h1><a href="./index.html"> Dulce Capricho </a></h1>
     </div>
-
     <!-- Carousel de fotos-->
-    <div id="carouselControls" class="carouselImg carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselControls" data-slide-to="1"></li>
-            <li data-target="#carouselControls" data-slide-to="2"></li>
-            <li data-target="#carouselControls" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <%= image_tag "carousel/tartas-1200-600.png", :class => "d-block w-100", :alt => "Primer slide"%>
+    <div class="container">
+        <div id="carouselControls" class="carouselImg carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselControls" data-slide-to="1"></li>
+                <li data-target="#carouselControls" data-slide-to="2"></li>
+                <li data-target="#carouselControls" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <%= image_tag "halloween/hallow (4).png", :class => "d-block w-100", :alt => "Primer slide"%>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag "halloween/hallow (1).png", :class => "d-block w-100", :alt => "Segundo slide"%>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag "halloween/hallow (1).jpg", :class => "d-block w-100", :alt => "Tercer slide"%>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag "halloween/hallow (3).jpg", :class => "d-block w-100", :alt => "Cuarto slide"%>   
+                </div>
             </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/bautizo2.jpg", :class => "d-block w-100", :alt => "Segundo slide"%>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/boda2.jpeg", :class => "d-block w-100", :alt => "Tercer slide"%>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/mesas-dulces-1200-600.png", :class => "d-block w-100", :alt => "Cuarto slide"%>   
-            </div>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
+    </div>
+    <div class="container">
+        <hr />
+        <div class="row">
+            <div class="col-md-12 col-lg-12">
+                <h1>Especial de Halloween</h1>
+                <h5>Disfruta de tus dulces de siempre con decorados tenebrosos.</h5>
+                <h5>O si lo prefieres pide nuestros terroríficos 
+                dulces hechos especialmente para dar terror:</h5>
+                <ul>
+                    <li>Tarta de Halllowen de chocolate blanco y nubes</li>
+                    <li>Galletas murciélago</li>
+                    <li>Gusanos dulces de gelatina para Halloween</li>
+                    <li>Cupcakes de brujas de Halloween</li>
+                    <li>Cupcakes sorpresa</li>
+                    <li>Tarta de calabaza</li>
+                    <li>Popcakes de sabores sorpresa</li>
+                </ul>
+            </div> 
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="card-columns">
+                    <% imagenes = 1%>
+                    <%while imagenes < 26%>
+                        <div class="card">
+                        <a href="#" data-toggle="modal" data-target="#id<%=imagenes%>3">
+                            <%= image_tag "halloween/halloween ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => ""%>
+                        </a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="id<%=imagenes%>3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <%= image_tag "halloween/halloween ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
+                            </div>
+                        </div>
+                        <%imagenes = imagenes + 1%>
+                    <% end %>
+                </div>
+            </div>
+        </div>    
     </div>
 
     <!-- Genérico para todas las páginas -->

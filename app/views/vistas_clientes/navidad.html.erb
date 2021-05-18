@@ -17,23 +17,23 @@
 <body>
     
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-<a class="navbar-brand" href="./index.html">Dulce Capricho</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aira-controls="navbarNavDropdown" aira-expanded="false" aira-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="./encargos.html">Encargos</a></li>
-        <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
-        <li class="nav-item"><a class="nav-link" href="./politica_y_condiciones.html">Política y Condiciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="./quienessomos.html">¿Quiénes somos?</a></li>
-        <li class="nav-item"><a class="nav-link" href="./galeria.html">Galería</a></li>
-        <li class="nav-item active"><a class="nav-link" href="./navidad.html">Especial de Navidad</a></li>
-        <li class="nav-item"><a class="nav-link" href="./halloween.html">Especial de Halloween</a></li>
-    </ul>
-</div>
+    <a class="navbar-brand" href="./index.html">Dulce Capricho</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aira-controls="navbarNavDropdown" aira-expanded="false" aira-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="./encargos.html">Encargos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./politica_y_condiciones.html">Política y Condiciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./quienessomos.html">¿Quiénes somos?</a></li>
+            <li class="nav-item"><a class="nav-link" href="./galeria.html">Galería</a></li>
+            <li class="nav-item active"><a class="nav-link" href="./navidad.html">Especial de Navidad</a></li>
+            <li class="nav-item"><a class="nav-link" href="./halloween.html">Especial de Halloween</a></li>
+        </ul>
+    </div>
 </nav>
     <!-- Jumbotron clasico -->
     <!-- ocupa el largo de la pantalla-->
@@ -42,37 +42,143 @@
     </div>
 
     <!-- Carousel de fotos-->
-    <div id="carouselControls" class="carouselImg carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselControls" data-slide-to="1"></li>
-            <li data-target="#carouselControls" data-slide-to="2"></li>
-            <li data-target="#carouselControls" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <%= image_tag "carousel/tartas-1200-600.png", :class => "d-block w-100", :alt => "Primer slide"%>
+    <div class="container">
+        <div id="carouselControls" class="carouselImg carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselControls" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselControls" data-slide-to="1"></li>
+                <li data-target="#carouselControls" data-slide-to="2"></li>
+                <li data-target="#carouselControls" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <%= image_tag "navidad/carousel/navidad-1200-600 (10).jpg", :class => "d-block w-100", :alt => "Primer slide"%>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag "navidad/carousel/navidad-1200-600 (8).jpg", :class => "d-block w-100", :alt => "Segundo slide"%>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag "navidad/carousel/navidad-1200-600 (6).jpg", :class => "d-block w-100", :alt => "Tercer slide"%>
+                </div>
+                <div class="carousel-item">
+                    <%= image_tag "navidad/carousel/navidad-1200-600 (4).jpg", :class => "d-block w-100", :alt => "Cuarto slide"%>   
+                </div>
             </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/bautizo2.jpg", :class => "d-block w-100", :alt => "Segundo slide"%>
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <hr />
+        <div class="row">
+            <div class="col-md-12 col-lg-5">
+                <h1>Tartas de Navidad</h1>
+                <h5>Tus tartas de siempre con decorados especiales.</h5>
+                <h5>Además disponemos de una selección exclusiva de tartas:</h5>
+                <ul>
+                    <li>Tarta Red Velvet con crema de vainilla</li>
+                    <li>Brownie de chocolate navideño</li>
+                    <li>Tarta de Zanahoria con crema de naranja y jengibre</li>
+                    <li>Tarta de chocolate y crema de Ferrero Rocher</li>
+                    <li>Chritsmas Cake con crema de Brandy</li>
+                    <li>Tarta de almendra con chocolate blanco</li>
+                    <li>Cheesecake de turrón</li>
+                </ul>
             </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/boda2.jpeg", :class => "d-block w-100", :alt => "Tercer slide"%>
-            </div>
-            <div class="carousel-item">
-                <%= image_tag "carousel/mesas-dulces-1200-600.png", :class => "d-block w-100", :alt => "Cuarto slide"%>   
+            <div class="col-lg-7 col-md-12">
+                <div class="card-columns">
+                    <% imagenes = 1%>
+                    <%while imagenes < 8%>
+                        <div class="card">
+                        <a href="#" data-toggle="modal" data-target="#id<%=imagenes%>">
+                            <%= image_tag "navidad/tartas/"+ String(imagenes) + ".jpg" , :class => "img-fluid rounded", :alt => ""%>
+                        </a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="id<%=imagenes%>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <%= image_tag "navidad/tartas/"+ String(imagenes) + ".jpg" , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
+                            </div>
+                        </div>
+                        <%imagenes = imagenes + 1%>
+                    <% end %>
+                </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Siguiente</span>
-        </a>
-    </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12 col-lg-5">
+                <h1>Galletas</h1>
+                <h5>Tus galletas de siempre con decorados especiales.</h5>
+                <h5>Además disponemos de una selección exclusiva de tartas:</h5>
+                <ul>
+                    <li>Polvorones</li>
+                    <li>Mantecados</li>
+                    <li>Roscones de vino</li>
+                    <li>Hojaldrinas</li>
+                    <li>Caja de galletas navideñas</li>
+                    <li>Árbol de Navidad de galletas</li>
+                    <li>Copo de Nieve grandea</li>
+                    <li>Casita de Navidad de galletas</li>
+                    <li>Cascanueces grande (decorado con galleta)</li>
+                </ul>
+            </div>
+            <div class="col-lg-7 col-md-12">
+                <div class="card-columns">
+                    <% imagenes = 1%>
+                    <%while imagenes < 9%>
+                        <div class="card">
+                        <a href="#" data-toggle="modal" data-target="#id<%=imagenes%>2">
+                            <%= image_tag "navidad/galletas/galletas ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => ""%>
+                        </a>
+                        </div>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="id<%=imagenes%>2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <%= image_tag "navidad/galletas/galletas ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
+                            </div>
+                        </div>
+                        <%imagenes = imagenes + 1%>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12 ">
+                <h1>Cupcakes y Popcakes</h1>
+                <h5>Tus Cupcakes y Popcakes de siempre con decorados especiales.</h5>
+                <div class="card-columns">
+                    <% imagenes = 1%>
+                    <%while imagenes < 14%>
+                        <div class="card">
+                        <a href="#" data-toggle="modal" data-target="#id<%=imagenes%>3">
+                            <%= image_tag "navidad/cup-pop-cakes/cup-pop ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => ""%>
+                        </a>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="id<%=imagenes%>3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <%= image_tag "navidad/cup-pop-cakes/cup-pop ("+ String(imagenes) + ").jpg" , :class => "img-fluid rounded", :alt => "", :styles => "height=1200px;"%>
+                            </div>
+                        </div>
+                        <%imagenes = imagenes + 1%>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+        <hr />    
+    </div>
+    
     <!-- Genérico para todas las páginas -->
     <footer>
         <div class="row">
