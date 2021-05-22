@@ -242,9 +242,11 @@
                 <p1>En toda nuestras mesas encontrará un cartel personalizado con la correspondiente lista de
                     alérgenos
                 </p1>
-                <%= image_tag "politicaCondiciones/Alergenos1.png", :class => "d-none d-lg-block mx-auto" %>
-                <%= image_tag "politicaCondiciones/Alergenos2.png", :class => "d-none d-sm-block d-lg-none mx-auto img-fluid" %>
-                <%= image_tag "politicaCondiciones/Alergenos3.png", :class => "d-block d-sm-none mx-auto img-fluid" %>
+                <% @alergenos.each do |alergeno| %>
+                    <%= image_tag alergeno.imgLarge, :class => "d-none d-lg-block mx-auto" %>
+                    <%= image_tag alergeno.imgMedium, :class => "d-none d-sm-block d-lg-none mx-auto img-fluid" %>
+                    <%= image_tag alergeno.imgSmall, :class => "d-block d-sm-none mx-auto img-fluid" %>
+                <% end %>
             </div>
         </div>
     </div>
