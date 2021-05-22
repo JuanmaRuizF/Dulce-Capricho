@@ -50,7 +50,8 @@ post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#el
   post 'eventos/editar/:id', to: 'crud_eventos#editar' # Ruta que procesa la actualización de un registro en la base de datos 
   post 'eventos/eliminar/:id', to: 'crud_eventos#eliminar' # Ruta para eliminar un registro de la base de datos
   
-
+  #Vista servidor quienes somos
+  get 'quienes_somos/index' => 'crud_quienes_somos#index'
 
 
   #Vista servidor pedidos

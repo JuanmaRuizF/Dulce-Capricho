@@ -1,0 +1,3 @@
+class CrudQuienesSomosController < ApplicationController
+
+  end
