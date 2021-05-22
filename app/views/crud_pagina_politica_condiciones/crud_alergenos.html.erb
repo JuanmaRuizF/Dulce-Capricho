@@ -48,7 +48,7 @@
 
         <% @alergenos.each do |alergeno| %>
         
-            <form method="POST" action="/crud_pagina_politica_condiciones/editar/<%= alergeno.id %>" accept-charset="UTF-8" role="form" id="actualizar alerg" name="actualizarevento" enctype="multipart/form-data">
+            <form method="POST" action="/crud_pagina_politica_condiciones/editar/<%= alergeno.id %>" accept-charset="UTF-8" role="form" id="actualizar alerg" name="actulizarAlerg" enctype="multipart/form-data">
         
             <!-- Protección CSRF -->
             <%= token_tag nil %> 
@@ -61,9 +61,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="img1" class="negrita">Selecciona una imagen:</label>
+                            <label for="imgSmall" class="negrita">Selecciona una imagen:</label>
                             <div>
-                                <input class="form-control" type="file" name="img1" id="img1" >
+                                <input class="form-control" type="file" name="imgSmall" id="imgSmall" >
                                 <br>
                                 <br> Imagen Actual:
                                 <br>
@@ -73,9 +73,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="img2" class="negrita">Selecciona una imagen:</label>
+                            <label for="imgMedium" class="negrita">Selecciona una imagen:</label>
                             <div>
-                                <input class="form-control" type="file" name="img2" id="img2" >
+                                <input class="form-control" type="file" name="imgMedium" id="imgMedium" >
                                 <br>
                                 <br> Imagen Actual:
                                 <br>
@@ -85,9 +85,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="img3" class="negrita">Selecciona una imagen:</label>
+                            <label for="imgLarge" class="negrita">Selecciona una imagen:</label>
                             <div>
-                                <input class="form-control" type="file" name="img3" id="img3" >
+                                <input class="form-control" type="file" name="imgLarge" id="imgLarge" >
                                 <br>
                                 <br> Imagen Actual:
                                 <br>
@@ -96,15 +96,11 @@
 
                             </div>
                         </div>
-                        
-                        
 
                         <button type="submit" class="btn btn-info">Guardar</button>
                         <%= link_to 'Cancelar', url_for(:back), class: "btn btn-warning" %>
 
-                        <br>
-                        <br>
-
+                        <br><br>
 
                     </div>
                 </div>

@@ -59,10 +59,10 @@ class CrudPaginaPoliticaCondicionesController < ApplicationController
       if params[:imgSmall].present?
         @alergenos.update_column(:imgSmall, imgPeq)
       end   
-      if params[:imgSmall].present?
+      if params[:imgMedium].present?
         @alergenos.update_column(:imgMedium, imgMed)
       end
-      if params[:imgSmall].present?
+      if params[:imgLarge].present?
         @alergenos.update_column(:imgLarge, imgGran)
       end       
  
