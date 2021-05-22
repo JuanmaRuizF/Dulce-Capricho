@@ -46,18 +46,71 @@
         </nav>
         <hr>
 
-        <table class="table table-striped table-bordered table-hover">
-        <thead>
-                <tr>
-                    <th>Imagen</th>
-                    <th>Tamaño</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
+        <% @alergenos.each do |alergeno| %>
+        
+            <form method="POST" action="/crud_pagina_politica_condiciones/editar/<%= alergeno.id %>" accept-charset="UTF-8" role="form" id="actualizar alerg" name="actualizarevento" enctype="multipart/form-data">
+        
+            <!-- Protección CSRF -->
+            <%= token_tag nil %> 
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                        <div class="form-group">
+                            Imagen de formato pequeño
+                        </div>
 
-            </tbody>
-        </table>
+                        <div class="form-group">
+                            <label for="img1" class="negrita">Selecciona una imagen:</label>
+                            <div>
+                                <input class="form-control" type="file" name="img1" id="img1" >
+                                <br>
+                                <br> Imagen Actual:
+                                <br>
+                                <br>
+                                <%= image_tag alergeno.imgSmall, :class => "img-fluid", :title => "Img Pequeña", :alt => "Img Pequeña" %>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="img2" class="negrita">Selecciona una imagen:</label>
+                            <div>
+                                <input class="form-control" type="file" name="img2" id="img2" >
+                                <br>
+                                <br> Imagen Actual:
+                                <br>
+                                <br>
+                                <%= image_tag alergeno.imgMedium, :class => "img-fluid", :title => "Img Media", :alt => "Img Media" %>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="img3" class="negrita">Selecciona una imagen:</label>
+                            <div>
+                                <input class="form-control" type="file" name="img3" id="img3" >
+                                <br>
+                                <br> Imagen Actual:
+                                <br>
+                                <br>
+                                <%= image_tag alergeno.imgLarge, :class => "img-fluid", :title => "Img Grande", :alt => "Img Grande" %>
+
+                            </div>
+                        </div>
+                        
+                        
+
+                        <button type="submit" class="btn btn-info">Guardar</button>
+                        <%= link_to 'Cancelar', url_for(:back), class: "btn btn-warning" %>
+
+                        <br>
+                        <br>
+
+
+                    </div>
+                </div>
+            </form>
+        
+        <% end %>
         
     </div>
     <!-- Optional JavaScript; jQuery, Popper.js, and Bootstrap JS-->

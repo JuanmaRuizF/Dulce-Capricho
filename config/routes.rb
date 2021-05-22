@@ -27,6 +27,8 @@ post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#el
  #Política y Condiciones - Menú y sub apartados
  get 'crud_pagina_politica_condiciones/menu_pagina_politica_condiciones' => 'crud_pagina_politica_condiciones#menu_pagina_politica_condiciones'
  get 'crud_pagina_politica_condiciones/crud_alergenos' => 'crud_pagina_politica_condiciones#crud_alergenos'
+ post 'crud_pagina_politica_condiciones/editar/:id' => 'crud_pagina_politica_condiciones#editarAlerg'
+
  get 'crud_pagina_politica_condiciones/crud_politica_condiciones' => 'crud_pagina_politica_condiciones#crud_politica_condiciones'
 
   #Administración

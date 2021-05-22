@@ -89,8 +89,8 @@ ActiveRecord::Schema.define(version: 2021_05_16_122646) do
     t.string "domicilio"
     t.string "CP"
     t.string "fechaEntrega"
-    t.string "comentario"
-    t.string "tuPedido"
+    t.text "comentario"
+    t.text "tuPedido"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

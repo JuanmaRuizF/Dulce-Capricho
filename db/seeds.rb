@@ -173,9 +173,9 @@ preguntafrecuente3 = Preguntasfrecuente.create(
 
 fotoalergeno1 = Alergeno.create(
     screenSize: "Small",
-    imgSmall: "/politicaCondiciones/Alérgenos3.png",
-    imgMedium:"/politicaCondiciones/Alérgenos2.png",
-    imgLarge:"/politicaCondiciones/Alérgenos1.png"
+    imgSmall: "politicaCondiciones/Alergenos3.png",
+    imgMedium:"politicaCondiciones/Alergenos2.png",
+    imgLarge:"politicaCondiciones/Alergenos1.png"
 )
 
 
@@ -245,6 +245,5 @@ footer8 = Footer.create(
     nombredcha:"Especial de Halloween",
     enlacedcha:"./halloween.html"
 )
-
 
 
