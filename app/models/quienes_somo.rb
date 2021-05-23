@@ -1,0 +1,2 @@
+class QuienesSomo < ApplicationRecord
+end

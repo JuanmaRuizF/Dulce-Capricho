@@ -47,6 +47,9 @@ class VistasClientesController < ApplicationController
     @footers = Footer.all()
   end
 
+  def quienes_somos
+    @quienes_somos = QuienesSomo.all()
+  end  
 
   def politica_y_condiciones
     @footers = Footer.all()
