@@ -50,6 +50,8 @@ class VistasClientesController < ApplicationController
 
   def politica_y_condiciones
     @footers = Footer.all()
+    @alergenos = Alergeno.all()
+    @politicas = Politica.all()
   end
 
   def formularios

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_16_122646) do
+ActiveRecord::Schema.define(version: 2021_05_22_235840) do
 
   create_table "alergenos", charset: "utf8", force: :cascade do |t|
     t.string "screenSize"
@@ -91,6 +91,13 @@ ActiveRecord::Schema.define(version: 2021_05_16_122646) do
     t.string "fechaEntrega"
     t.text "comentario"
     t.text "tuPedido"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "politicas", charset: "utf8", force: :cascade do |t|
+    t.string "titulo"
+    t.string "descripcion"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
