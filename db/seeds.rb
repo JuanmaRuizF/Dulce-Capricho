@@ -270,4 +270,7 @@ footer8 = Footer.create(
     enlacedcha:"./halloween.html"
 )
 
-
+quienes_somos = QuienesSomo.create(
+    titulo: "¿Quienes somos?",
+    descripcion: "prueba"
+)

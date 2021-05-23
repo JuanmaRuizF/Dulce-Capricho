@@ -38,11 +38,12 @@
     <div class="jumbotron">
         <h1><a href="./index.html"> Dulce Capricho </a></h1>
     </div>
-    <div class="container">
-        <h1 class="titulo">¿Quiénes somos?</h1>
-        <p>Dulce Capricho es una repostería 100% artesanal</p>
-    </div>
-
+    <% @quienes_somos.each do |quienes_somos| %>
+        <div class="text-center">   
+            <h2 class="text-center"> <%= quienes_somos.titulo %> </h2>
+            <p class="text-center text-justify col-sm-12 offset-md-1 col-md-10 offset-lg-2 col-lg-8" ><%= quienes_somos.descripcion %></p>
+        </div>
+        <% end %>
     <!-- Carousel de fotos-->
     <div id="carouselControls" class=" carouselImg2 carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">

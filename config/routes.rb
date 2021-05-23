@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
  
 
+
   get 'formularios/index' => 'crud_formularios#index'
   get 'formularios/crear' => 'crud_formularios#crear'
   get 'formularios/actualizar/:id' => 'crud_formularios#actualizar'
@@ -55,7 +56,13 @@ post 'crud_preguntas_frecuentes/eliminar/:id', to: 'crud_preguntas_frecuentes#el
   
   #Vista servidor quienes somos
   get 'quienes_somos/index' => 'crud_quienes_somos#index'
-
+  get 'crud_quienes_somos/actualizar/:id' => 'crud_quienes_somos#actualizar'
+  get 'quienes_somos/leer/:id' => 'crud_quienes_somos#leer'
+  get 'quienes_somos/crear'=> 'crud_quienes_somos#crear'
+  get 'quienes_somos/actualizar/:id' => 'crud_quienes_somos#actualizar'
+  post 'quienes_somos/insertar' => 'crud_quienes_somos#insertar'
+  post 'quienes_somos/editar/:id', to: 'crud_quienes_somos#editar' 
+  post 'quienes_somos/eliminar/:id', to: 'crud_quienes_somos#eliminar' 
 
   #Vista servidor pedidos
   get 'pedidos/index' => 'crud_pedidos#index'

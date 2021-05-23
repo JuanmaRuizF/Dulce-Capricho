@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="es">
 
@@ -11,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <%= stylesheet_link_tag 'styles.css' %>
 
-    <title>Lista de Preguntas Frecuentes</title>
+    <title>CRUD ¿Quienes somos?</title>
 </head>
 
 <body>
@@ -22,7 +21,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item "><a class="nav-link" href="/index/admin">Menú</a></li>
-                <li class="nav-item active"><a class="nav-link" href="">Preguntas Frecuentes</a></li>
+                <li class="nav-item active"><a class="nav-link" href="">¿Quienes somos?</a></li>
 
             </ul>
             <a class="navbar-text nav-link nav-item" href="../logout">Salir</a>
@@ -36,12 +35,12 @@
     <div class = "container">
 
         <br>
-        <h1>Lista de preguntas frecuentes</h1>
+        <h1>CRUD ¿Quienes somos?</h1>
         <hr>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item" ><a href="/index/admin">Menú</a></li>
-                <li class="breadcrumb-item active"aria-current="page">¿Quiénes somos?</li>
+                <li class="breadcrumb-item active"aria-current="page">Pedidos</li>
             </ol>
         </nav>
         <hr>
@@ -56,14 +55,40 @@
         <table class="table table-striped table-bordered table-hover">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Descripción</th>
+                    <th>Título</th>
+                    <th>Descripcion</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
-           
+            <tbody>
+                <% @quienes_somos.each do |quienes_somos| %>
+                    <tr>
+                        <td class="v-align-middle">
+                            <%= quienes_somos.titulo %>
+                        </td>
+                        <td class="v-align-middle">
+                            <%= quienes_somos.descripcion %>
+                        </td>
+                        <td class="v-align-middle">
+        
+                        <form method="POST" action="/quienes_somos/eliminar/<%= quienes_somos.id %>" accept-charset="UTF-8" class="form-horizontal" role="form" onsubmit="return ConfirmDelete()">
+    
+                            <!-- Protección CSRF -->
+                            <%= token_tag nil %> 
+    
+                            <a href="/quienes_somos/leer/<%= quienes_somos.id %>" class="btn btn-dark">Detalles</a>
+                            <a href="/quienes_somos/actualizar/<%= quienes_somos.id %>" class="btn btn-primary">Editar</a>
+    
+                            <button type="submit" class="btn btn-danger">Eliminar</button>
+    
+                        </form>
+                    </td>
+                        
+                    </tr>
+                <% end %>
+            </tbody>
         </table>
-
-        <a href="/crud_preguntas_frecuentes/crear" class="btn btn-primary">Añadir</a>
+        <a href="/quienes_somos/crear" class="btn btn-primary">Añadir</a>
         <br>
         <br>
 
