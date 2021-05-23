@@ -272,5 +272,5 @@ footer8 = Footer.create(
 
 quienes_somos = QuienesSomo.create(
     titulo: "¿Quienes somos?",
-    descripcion: "prueba"
+    descripcion: "Dulce Capricho es una dulceria 100% artesanal. Con la creación de esta página web esperamos poder llevar nuestros servicios y creaciones a muchas más personas en todo el mundo"
 )
