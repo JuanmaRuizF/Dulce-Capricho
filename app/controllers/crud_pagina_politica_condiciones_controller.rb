@@ -1,10 +1,20 @@
 class CrudPaginaPoliticaCondicionesController < ApplicationController
 
+  before_action :require_login
+  def require_login
+    current_user = User.find_by(:id => session[:current_user_id])
+    if !current_user 
+      flash[:error] = "Debe iniciar sesión para acceder a este contenido"
+      redirect_to '/login/admin'
+    end
+  end
+  
   def crud_alergenos
     @alergenos = Alergeno.all()
   end
 
   def crud_politica_condiciones
+    @politicas = Politica.all()
   end
 
   def editarAlerg
@@ -74,6 +84,15 @@ class CrudPaginaPoliticaCondicionesController < ApplicationController
       @ini = "/crud_pagina_politica_condiciones/crud_alergenos"
       flash[:notice] = "Actualizado Correctamente !"
       redirect_to @ini 
+  end
+
+  def editarPol
+    @retu ='/crud_pagina_politica_condiciones/crud_politica_condiciones'
+    @edicion = Politica.find(params[:id])
+    @edicion.update(params.permit(:titulo, :descripcion))
+          
+    flash[:notice] = "Actualizado correctamente!"
+    redirect_to @retu
   end
 
   private
