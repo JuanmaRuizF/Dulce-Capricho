@@ -168,7 +168,31 @@ preguntafrecuente3 = Preguntasfrecuente.create(
                     descripcion: "En el presupuesto que te damos tendrás un número de cuenta y otro de telefono. Tu decides a través de transferencia bancaria, bizum o efectivo."      
 )
 
-
+#Politicas de empresa
+politica1 = Politica.create(
+    titulo: "Confirmación de fechas",
+    descripcion: "La contratación de eventos deberá ser confirmada como mínimo con un mes de antelación."
+)
+politica2 = Politica.create(
+    titulo: "Cita en el local",
+    descripcion: "¿Necesitas ayuda? Pide cita previa en nuestro local para aclarar todas tus dudas."
+)
+politica3 = Politica.create(
+    titulo: "Pedido mínimo",
+    descripcion: "Consúltanos el pedido mínimo en pastelería. El montaje y la decoración se presupuesta a parte."
+)
+politica4 = Politica.create(
+    titulo: "Pago",
+    descripcion: "El pago puede ser a través de transferencia bancaria, bizum o efectivo a tu elección. En el presupuesto tendrás la información necesaria para cualquiera de las opciones. Se paga la mitad por adelantado."
+)
+politica5 = Politica.create(
+    titulo: "Transporte y montaje",
+    descripcion: "Cobraremos un suplemento adicional por el traslado y decoración de la mesa/tarta, dependiendo del lugar de entrega."
+)
+politica6 = Politica.create(
+    titulo: "Recogida de pedidos",
+    descripcion: "En caso de que no quieras que realicemos el montaje, tienes la opción de recoger tu encargo en nuestro local."
+)
 
 
 fotoalergeno1 = Alergeno.create(
