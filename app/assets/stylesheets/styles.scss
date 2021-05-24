@@ -113,6 +113,13 @@ svg.pe {
     }
 }
 .carouselImg2{
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
+}
+
+@media(max-width: 767px) {
+    .carouselImg2{
+        width: 80%;
+        margin: 0 auto;
+    }
 }

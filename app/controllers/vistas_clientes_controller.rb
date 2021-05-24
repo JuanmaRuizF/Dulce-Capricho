@@ -49,6 +49,7 @@ class VistasClientesController < ApplicationController
 
   def quienes_somos
     @quienes_somos = QuienesSomo.all()
+    @footers = Footer.all()
   end  
 
   def politica_y_condiciones
